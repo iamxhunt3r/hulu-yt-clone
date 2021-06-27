@@ -23,6 +23,7 @@ function Header() {
             </div>
         <Image 
         className="object-contain"
+        alt="Hulu Logo"
         src="https://press.hulu.com/wp-content/uploads/2020/02/hulu-white.png"
         width={200}
         height={200}

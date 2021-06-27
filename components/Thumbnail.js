@@ -8,6 +8,7 @@ const BASE_URL = "https://image.tmdb.org/t/p/original";
         <div ref={ref} className="p-2 group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50">
             <Image 
             layout="responsive"
+            alt="Movie Image"
             src={
                 `${BASE_URL}${result.backdrop_path || result.poster_path}` ||
                 `${BASE_URL}${result.poster_path}` 
@@ -29,5 +30,7 @@ const BASE_URL = "https://image.tmdb.org/t/p/original";
         </div>
     )
 })
+
+Thumbnail.displayName = 'Thumbnail';
 
 export default Thumbnail;
